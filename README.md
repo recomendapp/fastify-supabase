@@ -26,6 +26,15 @@ First, register `@fastify/jwt` with your Supabase JWT secret. You can obtain it 
 ```ts
 import fastifyJWT from "@fastify/jwt";
 
+declare module "fastify" {
+	export interface FastifyInstance {
+		supabaseClient: SupabaseClient<DATABASE_TYPE>;
+	}
+	export interface FastifyRequest {
+		supabaseClient: SupabaseClient<DATABASE_TYPE>;
+	}
+}
+
 fastify.register(fastifyJWT, {
   secret: SUPABASE_JWT_SECRET,
 });
