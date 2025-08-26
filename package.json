@@ -1,11 +1,8 @@
 {
-  "name": "@psteinroe/fastify-supabase",
+  "name": "@recomendapp/fastify-supabase",
   "version": "0.1.0",
   "author": "Philipp Steinrötter <philipp@steinroetter.com>",
   "type": "module",
-  "bugs": {
-    "url": "https://github.com/psteinroe/supabase-cache-helpers/issues"
-  },
   "main": "./dist/index.cjs",
   "source": "./src/index.ts",
   "exports": {
@@ -31,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/psteinroe/fastify-supabase.git"
+    "url": "git+https://github.com/recomendapp/fastify-supabase.git"
   },
   "scripts": {
     "test": "bun test",
